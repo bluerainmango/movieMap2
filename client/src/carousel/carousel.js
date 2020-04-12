@@ -5,7 +5,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-
+import FilmCard from './filmCard.js';
 // import tileData from './tileData';
 
 import image1 from './images/RO.jpg';
@@ -86,14 +86,28 @@ const tileData = [
   }
 ];
 
+state={
+    showCard:false
+  }
+
+
+function displayFilmCard(){
+  {this.setState({
+    showCard:!this.state.showCard
+  })}
+  }
+
+
 export default function SingleLineGridList() {
   const classes = useStyles();
+
+  
 
   return (
     <div className={classes.root}>
       <GridList className={classes.gridList} cols={4.5}>
         {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
+          <GridListTile key={tile.img} onClick={()=>this.displayFilmCard()}>
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
@@ -110,6 +124,15 @@ export default function SingleLineGridList() {
           </GridListTile>
         ))}
       </GridList>
+      {
+      this.state.showCard?
+
+      <FilmCard></FilmCard>
+      :null
+    }
     </div>
+
+    
+    
   );
 }

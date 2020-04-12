@@ -48,7 +48,7 @@ export default function FilmReviewCard() {
   };
 //rgba(210, 204, 243, 0.816)
   return (
-    <Card className={classes.root} style={{backgroundColor: '#99a0f9', border: "none", boxShadow: '0px -5px 20px 20px #99a0f9', borderRadius: 'none'}}>
+    <Card className={classes.root} style={{width: '100%', backgroundColor: '#99a0f9', border: "none", boxShadow: '0px -5px 20px 20px #99a0f9', borderRadius: 'none'}}>
         <CardHeader style={{backgroundColor: '#99a0f9', color: "white"}}
           avatar={
             <Avatar aria-label="film" className={classes.avatar}>

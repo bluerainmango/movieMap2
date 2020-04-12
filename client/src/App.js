@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import './App.css';
 import Navbar from './navbar/navbar.js';
 import Carousel from './carousel/carousel.js';
-import FilmCard from './filmCard/filmCard.js';
+import FilmCard from './carousel/filmCard.js';
 import SignIn from './signIn/signIn.js';
 import SignUp from './signUp/signUp.js';
 import About from './about/about.js';
@@ -13,6 +13,8 @@ import Footer from './footer/footer.js';
 // import react-router (use)
 
 function App(props) {
+
+
   return (
     <div className="App App-body" >
 
@@ -25,9 +27,9 @@ function App(props) {
             <br></br>
             <Typography variant='h4'>My List</Typography>
             <Carousel />
-
-            // TEMPORARY to visualize the space and ref formats
-            <FilmCard />
+              
+            {/* // TEMPORARY to visualize the space and ref formats
+            <FilmCard /> */}
 
             <br></br>
             <Typography variant='h4'>Recommended because you searched ...</Typography>
