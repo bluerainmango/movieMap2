@@ -88,7 +88,7 @@ const tileData = [
 
 state={
     showCard:false
-  }
+  }         
 
 
 function displayFilmCard(){
