@@ -86,16 +86,16 @@ const tileData = [
   }
 ];
 
-state={
-    showCard:false
-  }         
+// state={
+//     showCard:false
+//   }         
 
 
-function displayFilmCard(){
-  {this.setState({
-    showCard:!this.state.showCard
-  })}
-  }
+// function displayFilmCard(){
+//   {this.setState({
+//     showCard:!this.state.showCard
+//   })}
+//   }
 
 
 export default function SingleLineGridList() {
@@ -136,3 +136,4 @@ export default function SingleLineGridList() {
     
   );
 }
+
