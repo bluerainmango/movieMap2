@@ -29,7 +29,7 @@ const MovieCarousel = (props) => {
   const [showCard2, setShowCard2] = useState(false);
   const [showCard3, setShowCard3] = useState(false);
 
-  //! 1. Define state(local variable for this comp) using a useState(init value)
+  //! 1. Define state(local variable for this comp) using a  useState(init value)
   // reason: sometimes general variable cannot properly work to be used inside of Return(below HTML rendering part) and it helps auto re-rendering
   const [movies, setMovies] = useState([]);
 
@@ -77,7 +77,7 @@ const MovieCarousel = (props) => {
               }}
             >
               {movie.title}
-            </div>
+            </div>    
           );
         })}
       </Carousel>
@@ -107,7 +107,7 @@ const MovieCarousel = (props) => {
               onClick={() => {
                 setShowCard3(true);
               }}
-            >
+            > 
               {movie.title}
             </div>
           );
